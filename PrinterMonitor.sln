@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{73940C84-32D9-4548-B5D8-0790BD271F63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{B15824D0-C294-46BD-BFDD-FD75439F36EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{B15824D0-C294-46BD-BFDD-FD75439F36EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cross-Cutting", "Cross-Cutting\Cross-Cutting.csproj", "{2869E815-7ABF-422F-B59D-DA47C73C1D62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cross-Cutting", "src\Cross-Cutting\Cross-Cutting.csproj", "{2869E815-7ABF-422F-B59D-DA47C73C1D62}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{0EE2584E-067F-45AB-A957-3C0FC2A66887}"
 	ProjectSection(SolutionItems) = preProject
