@@ -24,8 +24,8 @@ namespace ProgGym.PrinterMonitor.Application.Services
         {
             List<string> printers = new List<string>();
             DirectoryEntry root = new(_monitorSettings.DomainPath,
-                                                     _monitorSettings.DomainUserName,
-                                                     _monitorSettings.DomainPassword);
+                                      _monitorSettings.DomainUserName,
+                                      _monitorSettings.DomainPassword);
 
             DirectorySearcher searcher = new DirectorySearcher(root);
             searcher.Filter = "(objectClass=printQueue)";
