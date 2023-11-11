@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgGym.PrinterMonitor.UnitTest
 {
-    internal class SearchDeviceService
+    public class SearchDeviceService
     {
     }
 }
