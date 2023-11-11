@@ -23,11 +23,10 @@ namespace ProgGym.PrinterMonitor.Application.Services
         public async Task <List<string>> GetPrinters()
         {
             List<string> printers = new List<string>();
-#pragma warning disable CA1416 // Проверка совместимости платформы
-            DirectoryEntry root = new DirectoryEntry(_monitorSettings.DomainPath,
+            DirectoryEntry root = new(_monitorSettings.DomainPath,
                                                      _monitorSettings.DomainUserName,
                                                      _monitorSettings.DomainPassword);
-#pragma warning restore CA1416 // Проверка совместимости платформы
+
             DirectorySearcher searcher = new DirectorySearcher(root);
             searcher.Filter = "(objectClass=printQueue)";
             searcher.PropertiesToLoad.Add("cn");
