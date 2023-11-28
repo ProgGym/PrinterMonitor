@@ -6,10 +6,11 @@ using System.Net.Sockets;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using System.DirectoryServices;
 using ProgGym.PrinterMonitor.Application.Interfaces;
+using System.DirectoryServices;
+using ProgGym.PrinterMonitor.Application;
 
-namespace ProgGym.PrinterMonitor.Application.Services
+namespace ProgGym.PrinterMonitor.Domain_Win.Services
 {
     public class SearchDeviceService : ISearchDeviceService
     {
