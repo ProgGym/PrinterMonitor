@@ -8,6 +8,6 @@ namespace ProgGym.PrinterMonitor.Application.Interfaces
 {
     public interface ISearchDeviceService
     {
-        public Task<List<string>> GetPrinters();
+        public List<string> GetPrinters();
     }
 }
