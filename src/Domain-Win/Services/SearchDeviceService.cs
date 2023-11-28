@@ -15,21 +15,17 @@ namespace ProgGym.PrinterMonitor.Domain_Win.Services
 {
     public class SearchDeviceService : ISearchDeviceService
     {
-        private readonly MonitorSettings monitorSettings;
         private readonly IAuthDomain authDomain;
         private List<string?> printers = new List<string?>();
         
-        public SearchDeviceService(MonitorSettings monitorSettings, IAuthDomain authDomain)
+        public SearchDeviceService(IAuthDomain authDomain)
         {
-            this.monitorSettings = monitorSettings;
             this.authDomain = authDomain;
         }
 
         public List<string?> GetPrinters()
         {
-            DirectorySearcher searcher = new DirectorySearcher(this.authDomain.GetEntry(this.monitorSettings.DomainPath, 
-                                                                                        this.monitorSettings.DomainUserName,
-                                                                                        this.monitorSettings.DomainPassword));
+            DirectorySearcher searcher = new DirectorySearcher(this.authDomain.Root);
             searcher.Filter = "(objectClass=printQueue)";
             searcher.PropertiesToLoad.Add("cn");
             foreach (SearchResult result in searcher.FindAll())

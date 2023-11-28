@@ -9,6 +9,6 @@ namespace ProgGym.PrinterMonitor.Domain_Win.Interfaces
 {
     public interface IAuthDomain
     {
-        public DirectoryEntry GetEntry(string? path, string? username, string? password);
+        public DirectoryEntry Root { get; }
     }
 }
