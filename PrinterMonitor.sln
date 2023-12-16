@@ -24,6 +24,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "tests\UnitTest\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain_Win", "src\Domain-Win\Domain_Win.csproj", "{1DF9A4AE-4B7F-4335-B802-9A32A3BD8C55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTest", "tests\IntegrationTest\IntegrationTest.csproj", "{C7686106-F90B-42E6-A648-55DB253882B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{1DF9A4AE-4B7F-4335-B802-9A32A3BD8C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DF9A4AE-4B7F-4335-B802-9A32A3BD8C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DF9A4AE-4B7F-4335-B802-9A32A3BD8C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7686106-F90B-42E6-A648-55DB253882B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7686106-F90B-42E6-A648-55DB253882B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7686106-F90B-42E6-A648-55DB253882B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7686106-F90B-42E6-A648-55DB253882B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F7F053B0-8E7F-41C8-A60F-790061386B0D} = {923E7B9C-EDE6-4BC4-A561-4FDB159A2DDC}
 		{CA325FB5-C970-4E48-B29B-A2C5631A6AD4} = {9C52CF31-4A61-46ED-91DE-C73B07D9EE9F}
+		{C7686106-F90B-42E6-A648-55DB253882B8} = {9C52CF31-4A61-46ED-91DE-C73B07D9EE9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8AC27A90-8AD6-4D17-9B63-91E4D30A9DE1}
