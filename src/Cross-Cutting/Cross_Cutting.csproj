@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>ProgGym.PrinterMonitor.Cross_Cutting</RootNamespace>
+    <RootNamespace>ProgGym.PrinterMonitor.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
