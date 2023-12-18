@@ -20,20 +20,20 @@ namespace ProgGym.PrinterMonitor.IntegrationTest.Service
         [SetUp]
         public void SearchDeviceServiceTestsSetUp()
         {
+            //Arrange 
+
             authDomain.Setup(a => a.Root).Returns(new DirectoryEntry());
             service = new SearchDeviceService(authDomain.Object);
         }
 
         [Test()]
-        public void SearchDeviceServiceTest()
-        {
-
-        }
-
-        [Test()]
         public void GetPrintersTest()
         {
+            //Act 
+            var items = service.GetPrinters();
 
+            //Assert
+            Assert.IsTrue(items.Any());
         }
     }
 }

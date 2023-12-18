@@ -17,12 +17,13 @@ namespace ProgGym.PrinterMonitor.Domain_Win.Services
     {
         private readonly IAuthDomain authDomain;
         private List<string?> printers = new List<string?>();
-        
+
         public SearchDeviceService(IAuthDomain authDomain)
         {
             this.authDomain = authDomain;
         }
 
+        //TODO: Создать модель-класс для получения нескольких данных о принтере
         public List<string?> GetPrinters()
         {
             DirectorySearcher searcher = new DirectorySearcher(this.authDomain.Root);
